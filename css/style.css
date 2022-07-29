@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+.instagram_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram_img img{
+    height: 50rem;
+}
+
+.instagram_login{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+  
+}
+
+.login{
+    background-color: #0095f6;
+    color:#ffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+.logout{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.logo{
+    height: 15rem;
+    padding: 10px;
+}
+.profile_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile_img img{
+    height: 20rem;
+}
+
+.group_login{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgrey;
+    margin-bottom: 15px;
+}
+
+
+.group_login:nth-child(1){
+    min-height: 19rem;
+}
+
+.wrong_account{
+    color: rgb(160, 160, 160);
+}
+
+.link_blue{
+    color: #0095f6;
+}
+
+.get_app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.logos_app{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app_download{
+    height: 5rem;
+    width: 16rem;
+    background-size: cover;
+}
+
+.app_download:nth-child(1){
+    background-image: url(img/googleplay_botao.png);
+}
+
+.app_download:nth-child(2){
+    background-image: url(img/apple_butao.png);
+}
+
+@media (max-width: 1024px){
+    .instagram{
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px){
+    .instagram{
+        width: 90%;
+    }
+    .instagram_img{
+        display: none;
+    }
+    .instagram_login{
+        width: 100%;
+    }
+}
